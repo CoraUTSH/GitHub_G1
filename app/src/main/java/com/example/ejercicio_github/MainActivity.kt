@@ -35,8 +35,13 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
+    Mensaje()
 }
 
+@Composable
+fun Mensaje(){
+    Text(text = "Soy un texto de prueba....")
+}
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
